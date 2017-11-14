@@ -1,4 +1,5 @@
 <h1>Home Page</h1>
-<li ng-repeat="item in Room">
-    <input ng-model="item.Room" ng-change="Room.$save(item)" />
+
+<li data-ng-repeat="item in Room">
+    {{ item }}
 </li>

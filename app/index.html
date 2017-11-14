@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="bChat">
+<html data-ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <ui-view></ui-view>
+    <data-ng-view></data-ng-view>
 
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -34,6 +34,7 @@
     <!-- Application Files -->
     <script src="/scripts/Room.js"></script>
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
 
 </body>
 </html>
