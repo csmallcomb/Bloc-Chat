@@ -1,10 +1,10 @@
 (function() {
     function HomeCtrl($scope) {
-        $scope.Room = Room;
+        $scope.Room = $firebaseArray(ref);
     }
 
     angular
-        .module('blocChat')
-        .controller('HomeCtrl', [HomeCtrl]);
+        .module('blocChat', [])
+        .controller('HomeCtrl', ['HomeCtrl', 'Room']);
 
 })();
